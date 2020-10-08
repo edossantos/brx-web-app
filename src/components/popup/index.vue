@@ -47,13 +47,20 @@ export default {
             background: #ffffff;
             transition: all .15s ease-out;
             z-index: 5;
-            width: 512px;
-            height: 320px;
+            width: 295px;
+            height: 295px;
+            @media screen and (min-width: $bp-m) {
+                width: 512px;
+                height: 320px
+            }
             .container{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                padding-top: 37px;
+                padding-top: 20px;
+                @media screen and (min-width: $bp-m) {
+                    padding-top: 37px;
+                }
                 .header{
                     .image{
                         padding-bottom: 20px;
@@ -61,8 +68,12 @@ export default {
                     .title{
                         padding-bottom: 20px;
                         h2{
-                            font: 30px/34px $font-family-lato;
+                            font: 25px/25px $font-family-lato;
                             font-weight: bold;
+                            @media screen and (min-width: $bp-m) {
+                                font-size: 30px;
+                                line-height: 34px;
+                            }
                         }
                     }
                 }
@@ -71,7 +82,11 @@ export default {
                     .description{
                         padding: 0 20px;
                         p{
-                            font: 18px/25px $font-family-lato;
+                            font: 17px/25px $font-family-lato;
+                            @media screen and (min-width: $bp-m) {
+                                font-size: 18px;
+                                line-height: 25px;
+                            }
                         }
                     }
                 }
